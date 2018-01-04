@@ -1,7 +1,6 @@
 {
     "name": "sinevia/php-library-authentication",
     "description": "PHP Library Authentication",
-    "version": "0.0.1",
     "type": "library",
     "keywords": ["authentication", "library", "php", "sinevia"],    
     "homepage": "http://github.com/sinevia/php-library-authentication",
