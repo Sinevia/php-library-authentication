@@ -29,11 +29,15 @@ Probably the greatest features is the support of namespaces. The namespaces allo
 Example 1. Add the current user both to the manager and employee namespace
 
 ```
-\Sinevia\Authentication::getInstance()->setIdentity('manager', $loggedinUser->Id);
-\Sinevia\Authentication::getInstance()->setIdentity('employee', $loggedinUser->Id);
+if ($isManager) {
+    \Sinevia\Authentication::getInstance()->setIdentity('manager', $loggedinUser->Id);
+}
+if ($isEmployee) {
+    \Sinevia\Authentication::getInstance()->setIdentity('employee', $loggedinUser->Id);
+}
 ```
 
-Example 2. Check if user is allowed access to the anager area and allow/deny access
+Example 2. Check if user is allowed access to the manager area and allow/deny access
 
 ```
 // Check if the user is part of the manager namespace
