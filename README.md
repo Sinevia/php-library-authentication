@@ -24,7 +24,7 @@ $userId = \Sinevia\Authentication::getInstance()->getIdentity('user'); // During
 
 ### 2. Namespaced Identities ###
 
-Probably the greatest features is the support of namespaces. The namespaces allows to keep separation betweern different areas of responsibility. The following example will help illustrate the namespaces better. A website may be separated into manager area, clients area, employee area, each with different functions. Upon login a manager can be set to authenticated both as a manager and employee (example 1). Upon attempting to access the area his access can be checked before beine allowed/denied to continue (example 2).
+Probably the greatest features is the support of namespaces. The namespaces allows to keep separation betweern different areas of responsibility. The following example will help illustrate the namespaces better. A website may be separated into manager area, clients area, employee area, each with different functions. Upon login a manager can be set to authenticated both as a manager and employee (example 1). Upon attempting to access the area his access can be checked before being allowed/denied to continue (example 2).
 
 Example 1. Add the current user both to the manager and employee namespace
 
