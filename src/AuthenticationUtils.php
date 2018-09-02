@@ -94,7 +94,7 @@ class AuthenticationUtils {
      * @return bool true on success, false otherwise
      */
     private static function stringRandom($length = 8, $string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890") {
-        $chars = str_split($string);
+        $chars = str_split($string . $string . $string . $string . $string . $string);
         shuffle($chars);
         shuffle($chars);
         return implode("", array_splice($chars, 0, $length));
