@@ -32,7 +32,7 @@ class Authentication {
      */
     public static function getInstance() {
         if (self::$instance === null) {
-            if (!isset($_SESSION)) {
+            if (!isset($_SESSION) && headers_sent() == false) {
                 session_start();
             } // Session is needed
             self::$instance = new Authentication;
